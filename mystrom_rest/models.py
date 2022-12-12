@@ -32,6 +32,7 @@ class MystromResult(models.Model):
     relay = models.IntegerField()
     temperature = models.FloatField()
     date = models.DateTimeField(auto_now_add=True)
+    source = models.IntegerField(default=1)
 
     def __repr__(self):
         return "<Result(deivce_id='%s', power='%s', ws='%s', relay='%s', temperature='%s', date='%s')>" % (

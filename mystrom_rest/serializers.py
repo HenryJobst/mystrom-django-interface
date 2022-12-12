@@ -20,4 +20,5 @@ class MystromResultSerializer(serializers.ModelSerializer):
                   'ws',
                   'relay',
                   'temperature',
-                  'date')
+                  'date',
+                  'source')
